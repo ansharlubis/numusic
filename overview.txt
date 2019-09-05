@@ -12,10 +12,10 @@ The syntax is composed of 2 main parts:
 Header is made up of information such as Title, Arranger, Time, Key. There is no 
 determined order in writing them. It can be written as follow:
 
-	Title: \* insert title here *\
-	Arr: \* insert arranger here *\
-	Time: 4/4 \* written as a fraction *\
-	Key: Do=F \* written as Do='something' *\
+    Title: \* insert title here *\
+    Arr: \* insert arranger here *\
+    Time: 4/4 \* written as a fraction *\
+    Key: Do=F \* written as Do='something' *\
 
 
 /// SCORE ///
@@ -102,7 +102,7 @@ Notes are represented as follow:
                    -flat    |     \+note 
                    high-    |     note+'    (double or triple high uses more ')
                     low-    |     note+,    (double or triple low uses more ,)
-				------------------------------
+                ------------------------------
 
 
 ########################################################################################
