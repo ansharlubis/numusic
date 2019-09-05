@@ -51,10 +51,10 @@ The parts that represent the musical notes are the line of notes.
 Each voice uses two lines In the example below, there are two voices.
 
              _	X
-    First	|	| -== -== --  -== |    --   --   ---  |	
-	Voice	|_	| 212 *34 *5  321 | 1  *1   21   7,1  |	 _
-				|     ---         |    --- ---- ----- |	  | Second
-				| 7,  *6, /5.  *  | 6, *6, 7,6, /5,6, |  _| Voice
+    First   |   | -== -== --  -== |    --   --   ---  |	
+    Voice   |_  | 212 *34 *5  321 | 1  *1   21   7,1  |	 _
+                |     ---         |    --- ---- ----- |	  | Second
+                | 7,  *6, /5.  *  | 6, *6, 7,6, /5,6, |  _| Voice
 
 Each voice consists of two parts: upper part that is made of a bunch of dashes 
 and lower part that is made of notes.
@@ -90,8 +90,8 @@ Notes are represented as follow:
 				   Note     |  Representation
 				------------------------------	
 				longer note |       *
-				   empty	|       0   
-					 c      |		1
+                   empty    |       0   
+                     c      |		1
 					 d      |		2
 					 e      |		3
 					 f      |		4
