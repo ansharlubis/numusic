@@ -6,7 +6,7 @@ Its purpose currently is only to calculate the optimum assignment of the musical
 
 ## Using Numusic
 
-Simply run 'parse.py' with a score file
+Simply run `parse.py` with a score file
 
 ```python
 python parse.py file/path
