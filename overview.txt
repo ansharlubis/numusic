@@ -4,8 +4,8 @@
 
 
 The syntax is composed of 2 main parts:
-	1. Header
-	2. Score
+    1. Header
+    2. Score
 
 /// HEADER ///
 
