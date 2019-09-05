@@ -49,6 +49,6 @@ intervals: [[38, 42, 'F#'], [52, 54, 'F#'], [59, 60, 'F#'], [104, 106, 'F#']]
 
 ### Disclaimer
 
-Numusic is designed as a descriptive language design project during my internship at [Nau Data Lab](https://www.nau.co.jp/company/).
+Numusic is designed as a language design project during my internship at [Nau Data Lab](https://www.nau.co.jp/company/).
 
 なうデータ研究所で言語・方式インターンシップのプロジェクトとしてNumusicを設計した。

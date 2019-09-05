@@ -1,5 +1,5 @@
-Title: some_song
-Arr: some_arranger
+Title: Doraemon no Uta
+Arr: Kelompok Paduan Angklung ITB
 Key: Do=G
 Time: 12/8
 

@@ -159,8 +159,3 @@ from header and instrument <-> tone relation.
 
 7. Lastly, convert the list of necessary instrument for each beat into a list of interval 
 (interval_start, interval_end, instrument number).
-
-
-########################################################################################
-################INSTRUMENT ASSIGNMENT###################################################
-########################################################################################
