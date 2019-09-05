@@ -30,3 +30,8 @@ intervals: [[32, 36, 'C'], [46, 48, 'C'], [62, 65, 'C'], [100, 102, 'C'], [86, 9
 
 This shows that at minimum 13 players are needed to play this score. In this example, Player 1 plays the instruments numbered `'3'` and `'13'` in the intervals listed above.
 
+
+### Disclaimer
+
+Numusic is designed as a language design project during my internship at [Nau Data Lab](https://www.nau.co.jp/company/)
+なうデータ研究所で言語・方式インターンシップのプロジェクトとしてNumusicを設計した
