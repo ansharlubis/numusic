@@ -20,6 +20,13 @@ def remove_player(to_remove, list_of_players):
 			result.remove(player)
 	return result
 
+# renaming player so it becomes incremental again
+# after optimization
+def rename_player(opt):
+	for i in range(1, len(opt)+1):
+		opt[i-1].id = i
+	return opt
+
 def redistribute_instruments(player, original_list):
 	redistribution_list = copy.deepcopy(original_list)
 	redistribution_list = remove_player(player, redistribution_list)
@@ -106,4 +113,4 @@ def optimize(initial_assignment, instruments_list, rest):
 			else:
 				j += 1
 
-	return sorted(assignment, key=lambda player: player.id)
+	return rename_player(sorted(assignment, key=lambda player: player.id))

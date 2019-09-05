@@ -22,7 +22,7 @@ determined order in writing them. It can be written as follow:
 
 The score is made up of multiple block of notes. Below is an example of a block of notes. 
 
-				X
+                X
 				| -== -== --  -== |    --   --   ---  |
 				| 212 *34 *5  321 | 1  *1   21   7,1  |
 				|     ---         |    --- ---- ----- |

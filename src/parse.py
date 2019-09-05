@@ -18,6 +18,7 @@ def main():
 
 	for player in optimized:
 		print(player)
+		print()
 
 if __name__ == "__main__":
     main()
