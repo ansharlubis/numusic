@@ -34,4 +34,5 @@ This shows that at minimum 13 players are needed to play this score. In this exa
 ### Disclaimer
 
 Numusic is designed as a language design project during my internship at [Nau Data Lab](https://www.nau.co.jp/company/)
+
 なうデータ研究所で言語・方式インターンシップのプロジェクトとしてNumusicを設計した
