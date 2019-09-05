@@ -9,8 +9,8 @@ The syntax is composed of 2 main parts:
 
 /// HEADER ///
 
-Header is made up of information such as Title, Arranger, Time, Key. There is no determined order in writing them.
-It can be written as follow:
+Header is made up of information such as Title, Arranger, Time, Key. There is no 
+determined order in writing them. It can be written as follow:
 
 	Title: \* insert title here *\
 	Arr: \* insert arranger here *\
@@ -30,11 +30,14 @@ The score is made up of multiple block of notes. Below is an example of a block 
 
 /* Attribute */
 
-The first line of a block of note is reserved for attributes. Attributes include jump target signified by (target_name). 
-Also key change signified by key(key_name), in the example below key%A changes the key to Do=A in that measure. 
-Lastly there is a jump point signified by to'target_name'. In the example below, it means jump to %X in the beginning of the block.
+The first line of a block of note is reserved for attributes. Attributes include 
+jump target signified by (target_name).  Also key change signified by key(key_name), 
+in the example below key%A changes the key to Do=A in that measure. Lastly there is a 
+jump point signified by to'target_name'. In the example below, it means jump to %X in 
+the beginning of the block.
 
-The attributes are attached to the closest bar line, so %X and keyA are attached to the beginning of first bar.
+The attributes are attached to the closest bar line, so %X and keyA are attached to the 
+beginning of first bar.
 
   attributes <-	%X keyA								  to%X
 				| -== -== --  -== |    --   --   ---  |
@@ -53,13 +56,14 @@ Each voice uses two lines In the example below, there are two voices.
 				|     ---         |    --- ---- ----- |	  | Second
 				| 7,  *6, /5.  *  | 6, *6, 7,6, /5,6, |  _| Voice
 
-Each voice consists of two parts: upper part that is made of a bunch of dashes and lower part that is made of notes.
+Each voice consists of two parts: upper part that is made of a bunch of dashes 
+and lower part that is made of notes.
 
   upper part <-	| -== -== --  -== |    --   --   ---  |	
   lower part <-	| 212 *34 *5  321 | 1  *1   21   7,1  |
 
-The upper and lower part can be written just as it is. Upper and lower part correspond with each other. 
-In this example the time signature is 4/4, so
+The upper and lower part can be written just as it is. Upper and lower part correspond 
+with each other. In this example the time signature is 4/4, so
 
 				| -== 
 				| 212
@@ -109,14 +113,14 @@ Notes are represented as follow:
 
 (1) Score
 
-The music score is converted into an object of class Score before processed into a list of list of instrument numbers.
-A Score consists of a list of Measure.
+The music score is converted into an object of class Score before processed into a list 
+of list of instrument numbers.A Score consists of a list of Measure.
 
 (2) Measure
 
 Measure represents the part between the vertical lines.
-A Measure consists of a list of Voice and a list of Attributes. Attributes such as key change
-and Jump symbols are attached to respective Measure.
+A Measure consists of a list of Voice and a list of Attributes. Attributes such as 
+key changeand Jump symbols are attached to respective Measure.
 
 (3) Voice
 
@@ -125,8 +129,8 @@ A Voice consists of a list of Beat.
 (4) Beat
 
 A Beat consists of a list of Tone and a list of instrument number (String).
-The list of number found in a Beat is first converted into a list of Tone before converting
-them into a list of instrument number which depends on the key.
+The list of number found in a Beat is first converted into a list of Tone before 
+converting them into a list of instrument number which depends on the key.
 
 (5) Tone
 
@@ -137,13 +141,24 @@ for each lower octave)
 
 /// PARSING ///
 
-1. The whole score is converted into an object of class Score (including all the sub parts of the score)
+1. The whole score is converted into an object of class Score (including all the sub 
+parts of the score)
+
 2. Asterisks are converted into the Tone right next before it.
+
 3. Jump symbols are removed by copying parts that loop.
-4. Flatten list of Voice in each Measure so that every Measure only have one Voice in its list of Voice.
-5. Convert all Tones into correponding instrument number using key information obtained from header and instrument <-> tone relation.
-6. Take all list of instrument numbers in each Beat and put them in a single list -> so we obtained the list of necessary instrument for each beat.
-7. Lastly, convert the list of necessary instrument for each beat into a list of interval (interval?_start, interval_end, instrument number).
+
+4. Flatten list of Voice in each Measure so that every Measure only have one Voice in 
+its list of Voice.
+
+5. Convert all Tones into correponding instrument number using key information obtained 
+from header and instrument <-> tone relation.
+
+6. Take all list of instrument numbers in each Beat and put them in a single list 
+-> so we obtained the list of necessary instrument for each beat.
+
+7. Lastly, convert the list of necessary instrument for each beat into a list of interval 
+(interval_start, interval_end, instrument number).
 
 
 ########################################################################################
