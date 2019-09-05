@@ -8,9 +8,9 @@ Its purpose currently is only to calculate the optimum assignment of the musical
 
 Simply run 'parse.py' with a score file
 
-'''python
+```python
 python parse.py file/path
-'''
+```
 
 
 
